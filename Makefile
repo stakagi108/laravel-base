@@ -15,6 +15,10 @@ down:
 restart:
 	@make down
 	@make up
+clean:
+	docker-compose exec php composer install
+	@make migrate
+	@make cache-clear
 migrate:
 	docker-compose exec php php artisan migrate
 fresh:

@@ -1,22 +1,20 @@
 # laravel-base
 
-## 前提
+## Introduction
 
 - Docker for Mac / Windowsインストール済み
 
-## 環境構築
+## Installation & Setup
 
-初期化
+Install
 ```bash
-$ make init
+make init
 ```
 
-初期データ挿入
+Initializing data
 ```bash
-$ make seed
-```
-
-アクセス  
+make seed
+```  
   
 TOP  
 http://localhost:8080/
@@ -24,14 +22,34 @@ http://localhost:8080/
 phpMyAdmin  
 http://localhost:8081/
 
-## コマンド
+## Command
 
-起動
+up
 ```bash
-$ make init
+make up
 ```
 
-停止
+stop
 ```bash
-$ make stop
+make stop
+```
+
+restart
+```bash
+make restart
+```
+
+migrate
+```bash
+make migrate
+```
+
+clean
+```bash
+make clean
+```
+
+cache clear
+```bash
+make cache-clear
 ```
