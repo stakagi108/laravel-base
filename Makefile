@@ -5,6 +5,7 @@ init:
 	docker-compose exec php php artisan key:generate
 	docker-compose exec php php artisan storage:link
 	docker-compose exec php chmod -R 777 storage bootstrap/cache
+	docker-compose exec php npm install
 	@make migrate
 up:
 	docker-compose up -d
@@ -17,8 +18,11 @@ restart:
 	@make up
 clean:
 	docker-compose exec php composer install
+	@make view
 	@make migrate
 	@make cache-clear
+view:
+	docker-compose exec php npm run dev
 migrate:
 	docker-compose exec php php artisan migrate
 fresh:

@@ -19,6 +19,8 @@ make seed
 TOP  
 http://localhost:8080/
 
+admin@example.com / password
+
 phpMyAdmin  
 http://localhost:8000/
 
