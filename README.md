@@ -16,10 +16,12 @@ Initializing data
 make seed
 ```  
   
-TOP  
-http://localhost:8080/
+FRONT  
+http://localhost:8080/login  
+user@example.com / password
 
-ID  
+ADMIN
+http://localhost:8080/admin/login  
 admin@example.com / password
 
 phpMyAdmin  
