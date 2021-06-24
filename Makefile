@@ -30,5 +30,6 @@ fresh:
 seed:
 	docker-compose exec php php artisan db:seed
 cache-clear:
-	docker-compose exec php composer clear-cache
 	docker-compose exec php php artisan event:clear
+	docker-compose exec php php artisan cache:clear
+	docker-compose exec php php artisan config:clear

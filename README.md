@@ -19,6 +19,7 @@ make seed
 TOP  
 http://localhost:8080/
 
+ID  
 admin@example.com / password
 
 phpMyAdmin  
@@ -54,4 +55,9 @@ make clean
 cache clear
 ```bash
 make cache-clear
+```
+
+create model
+```bash
+php artisan make:Model Account --migration
 ```
