@@ -25,6 +25,7 @@ view:
 	docker-compose exec php npm run dev
 migrate:
 	docker-compose exec php php artisan migrate
+	@make cache-clear
 fresh:
 	docker-compose exec php php artisan migrate:fresh --seed
 seed:

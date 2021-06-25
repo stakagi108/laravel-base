@@ -20,7 +20,7 @@ FRONT
 http://localhost:8080/login  
 user@example.com / password
 
-ADMIN
+ADMIN  
 http://localhost:8080/admin/login  
 admin@example.com / password
 

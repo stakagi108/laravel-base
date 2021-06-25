@@ -21,10 +21,11 @@ class UsersTableSeeder extends Seeder
             'password' => bcrypt('password'),
         ]);
 
-        Admin::create([
+        $super_admin = Admin::create([
             'name' => 'ADMIN',
             'email' => 'admin@example.com',
             'password' => bcrypt('password'),
         ]);
+        $super_admin->assignRole('super_admin');
     }
 }
